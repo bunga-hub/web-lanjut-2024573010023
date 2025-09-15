@@ -129,7 +129,7 @@ Laravel sangat cocok untuk berbagai jenis aplikasi web, mulai dari yang sederhan
   Bagian yang bertugas untuk menampilkan informasi dalam bentuk Graphical User Interface (GUI).
 - Controller
   Bagian yang bertugas untuk menghubungkan serta mengatur model dan view agar dapat saling terhubung.
-
+  
 2.  cara kerjanya
 
 - Proses pertama adalah view akan meminta data untuk ditampilkan dalam bentuk grafis kepada pengguna.
