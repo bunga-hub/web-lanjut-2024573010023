@@ -10,7 +10,6 @@
             padding-top: 4rem;
             transition: all 0.3s ease;
             min-height: 100vh;
-
         }
         .theme-demo {
             border-radius: 10px;
@@ -27,25 +26,18 @@
     </style>
 </head>
 <body class="{{ $theme === 'dark' ? 'bg-dark text-light' : 'bg-light text dark' }}">
-
     @include('partials.navigation')
-
     <div class="container mt-4">
-
         @if(isset($alertMessage) && !empty($alertMessage))
             @include('partials.alert', ['message' => $alertMessage, 'type' => 'info'])
         @endif
-
         @yield('content')
     </div>
-
     <x-footer :theme="$theme"/>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
     //smooth theme transition
     document.addEventListener('DOMContentLoaded', function() {
-
         const themeLinks = document.querySelectorAll('a[href*="switch-theme"]');
         themeLinks.forEach(link => {
             link.addEventListener('click', function(e) {
@@ -54,8 +46,6 @@
             });
         });
     });
-
     </script>
-    
 </body>
 </html>

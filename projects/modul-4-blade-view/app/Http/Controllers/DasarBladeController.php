@@ -1,13 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 class DasarBladeController extends Controller
 {
-    public function showData()
-    {
+    public function showData(){
         $name = 'bunga';
         $fruits = ['Apple', 'Banana', 'Cherry'];
         $user = [
@@ -16,12 +13,10 @@ class DasarBladeController extends Controller
             'is_active' => true,
         ];
         $product = (object) [
-
-        'id' => 1,
-        'name' => 'Laptop',
-        'price' => 12000000
+            'id' => 1,
+            'name' => 'Laptop',
+            'price' => 12000000
         ];
-
         return view('dasar', compact('name', 'fruits', 'user', 'product'));
     }
 }
