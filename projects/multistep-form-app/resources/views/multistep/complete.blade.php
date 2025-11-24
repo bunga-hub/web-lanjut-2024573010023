@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Pendaftaran Selesai')
-
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-6">
@@ -14,7 +12,6 @@
                 <p class="card-text lead mb-4">
                     Terima kasih telah melengkapi formulir pendaftaran. Data Anda telah berhasil disimpan.
                 </p>
-                
                 <div class="alert alert-info text-start">
                     <h6><i class="fas fa-envelope me-2"></i>Informasi Penting:</h6>
                     <ul class="mb-0">
@@ -23,7 +20,6 @@
                         <li>Tim kami akan menghubungi Anda untuk langkah selanjutnya</li>
                     </ul>
                 </div>
-
                 <div class="mt-4">
                     <a href="{{ route('multistep.step1') }}" class="btn btn-primary me-2">
                         <i class="fas fa-plus me-2"></i>Daftar Lagi
@@ -34,7 +30,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Debug Data (bisa dihapus di production) -->
         @if(env('APP_DEBUG'))
         <div class="card mt-4">

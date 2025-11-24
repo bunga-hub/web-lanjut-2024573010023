@@ -1,7 +1,5 @@
 @extends('layouts.app')
-
 @section('title', 'Ringkasan Data')
-
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-8">
@@ -26,7 +24,6 @@
                 </div>
             </div>
         </div>
-
         <div class="card">
             <div class="card-header bg-success text-white">
                 <h4 class="mb-0">Ringkasan Data Anda</h4>
@@ -59,7 +56,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Informasi Pendidikan -->
                 <div class="mb-4">
                     <h5 class="border-bottom pb-2">
@@ -87,7 +83,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Pengalaman Kerja -->
                 <div class="mb-4">
                     <h5 class="border-bottom pb-2">
@@ -115,12 +110,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="alert alert-info">
                     <i class="fas fa-info-circle me-2"></i>
                     <strong>Perhatian:</strong> Pastikan semua data sudah benar sebelum mengirim.
                 </div>
-
                 <form method="POST" action="{{ route('multistep.complete') }}">
                     @csrf
                     <div class="d-flex justify-content-between">

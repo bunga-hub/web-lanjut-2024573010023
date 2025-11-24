@@ -12,7 +12,6 @@ class ProductController extends Controller
     {
         return view('product.create');
     }
-
     public function result(Request $request)
     {
         $dto = ProductDTO::fromRequest($request->all());
